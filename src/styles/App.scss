@@ -170,4 +170,22 @@ a {
     padding: 16px 0;
     display: flex;
   }
+  .status {
+    margin-bottom: 0;
+    margin-right: 8px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+  }
+
+  .status-icon {
+    display: inline-block;
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/check.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
 }

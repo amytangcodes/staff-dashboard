@@ -25,8 +25,14 @@ const StaffCard = (props) => {
         <div className="stat">Paid</div>
       </div>
       <div className="card_status">
-        <div className="status">Account created</div>
-        <div className="status">Onboarded</div>
+        <p className="status">
+          <span className="status-icon"></span>
+          Account created
+        </p>
+        <p className="status">
+          <span className="status-icon"></span>
+          Onboarded
+        </p>
       </div>
     </div>
   );
