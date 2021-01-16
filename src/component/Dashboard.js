@@ -1,6 +1,7 @@
 import React from "react";
+import PeopleColumn from "./PeopleColumn";
 
-const Dashboard = () => {
+const Dashboard = ({ staff }) => {
   return (
     <div id="dashboard" className="">
       <section>
@@ -10,7 +11,7 @@ const Dashboard = () => {
         </p>
       </section>
       <section className="section-content">
-        <div className="column_people"></div>
+        <PeopleColumn staffData={staff} />
         <div className="column_invite-people"></div>
       </section>
     </div>
