@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "semantic-ui-react";
 
 import Navbar from "./component/Navbar";
-import Homepage from "./component/Homepage";
+import Dashboard from "./component/Dashboard";
 import Aboutpage from "./component/Aboutpage";
 import "./styles/App.scss";
 
@@ -25,8 +25,10 @@ class App extends Component {
         <Container>
           <Router>
             <Navbar />
-            <Route path="/" exact render={() => <Homepage />} />
-            <Route path="/about" exact render={() => <Aboutpage />} />
+            <div className="page-container">
+              <Route path="/" exact render={() => <Dashboard />} />
+              <Route path="/about" exact render={() => <Aboutpage />} />
+            </div>
           </Router>
         </Container>
       </div>

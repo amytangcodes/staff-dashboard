@@ -1,15 +1,16 @@
 @import "vars";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 
+// BASE STYLES
+
 body,
 input,
 select,
 textarea {
-  // color: _palette(fg);
-
-  // font-weight: _font(weight-light);
-  font-size: 105.875%;
-  line-height: 1.60714em;
+  color: $black;
+  font-weight: $weight;
+  font-size: $size_xxsmall;
+  line-height: $size_regular;
 }
 
 p,
@@ -23,42 +24,103 @@ h6 {
   font-family: $font-family;
 }
 
+h1 {
+  font-size: $size_xxxxlarge;
+  line-height: 26.25px;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+a {
+  transition: all ease-in-out 0.3;
+}
+
 .App {
-  text-align: center;
   height: 100vh;
   background: #e5e5e5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page-container {
+  height: 100%;
+  padding-top: 48px;
+  border: 1px dashed pink;
+}
+
+.section-heading {
+  margin-bottom: 8px;
+}
+
+.section-heading_subhead {
+  font-size: $size_regular;
+  font-weight: $weight;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 // NAVBAR STYLES
 #navbar {
+  height: 64px;
   display: flex;
   justify-content: flex-end;
+
+  .home-logo {
+    color: black;
+    font-family: $font-family;
+    font-weight: $weight_bold;
+    font-size: $size_large;
+    line-height: $size_xxxlarge;
+    letter-spacing: 0em;
+  }
 
   a.item {
     font-weight: $weight_semi-bold;
     font-size: $size_regular;
     line-height: $size_xlarge;
+    &.active {
+      background: none;
+    }
+    &:hover {
+      background: none;
+    }
   }
+
+  // .ui.secondary.menu .active.item {
 }
 
-// MENU STYLES
+// DASHBOARD STYLES
+#dashboard {
+  .section-content {
+    display: flex;
+    padding-top: 11px;
 
-.home-logo {
-  color: black;
-  font-family: $font-family;
-  font-weight: $weight_bold;
-  font-size: $size_large;
-  line-height: $size_xxxlarge;
-  letter-spacing: 0em;
+    & > * {
+      border: 1px dashed violet;
+    }
+  }
+
+  .column_people {
+    flex: 1;
+  }
+
+  .column_invite-people {
+    flex: 0;
+  }
 }
