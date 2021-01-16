@@ -1,0 +1,64 @@
+@import "vars";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+body,
+input,
+select,
+textarea {
+  // color: _palette(fg);
+
+  // font-weight: _font(weight-light);
+  font-size: 105.875%;
+  line-height: 1.60714em;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  background: #e5e5e5;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+// NAVBAR STYLES
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+
+  a.item {
+    font-weight: $weight_semi-bold;
+    font-size: $size_regular;
+    line-height: $size_xlarge;
+  }
+}
+
+// MENU STYLES
+
+.home-logo {
+  color: black;
+  font-family: $font-family;
+  font-weight: $weight_bold;
+  font-size: $size_large;
+  line-height: $size_xxxlarge;
+  letter-spacing: 0em;
+}
