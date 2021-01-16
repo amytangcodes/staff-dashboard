@@ -20,17 +20,23 @@ const StaffCard = (props) => {
         </div>
       </Card.Content>
       <div className="card_stat">
-        <div className="stat">Pending</div>
-        <div className="stat">Approved</div>
-        <div className="stat">Paid</div>
+        <p className="stat">
+          <span className="icon clock-icon"></span>Pending: $7.00
+        </p>
+        <p className="stat">
+          <span className="icon clipboard-icon"></span>Approved: $62.12
+        </p>
+        <p className="stat">
+          <span className="icon expense-icon"></span>Paid: $0.00
+        </p>
       </div>
       <div className="card_status">
         <p className="status">
-          <span className="status-icon"></span>
+          <span className="icon status-icon"></span>
           Account created
         </p>
         <p className="status">
-          <span className="status-icon"></span>
+          <span className="icon status-icon"></span>
           Onboarded
         </p>
       </div>

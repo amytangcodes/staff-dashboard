@@ -143,6 +143,9 @@ a {
       margin-right: 24px;
       width: 64px;
       border-radius: 500rem;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1.5px solid #ffffff;
+      box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.12);
     }
     .card_container {
       display: flex;
@@ -169,23 +172,43 @@ a {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     padding: 16px 0;
     display: flex;
-  }
-  .status {
-    margin-bottom: 0;
-    margin-right: 8px;
-    padding: 6px;
-    display: flex;
-    align-items: center;
+    & > * {
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      margin-bottom: 0;
+      margin-right: 8px;
+    }
   }
 
-  .status-icon {
+  .stat {
+    border: 1.5px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+  }
+
+  .icon {
     display: inline-block;
     margin-right: 6px;
     width: 20px;
     height: 20px;
-    background-image: url("../images/check.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+  }
+
+  .status-icon {
+    background-image: url("../images/check.png");
+  }
+
+  .clipboard-icon {
+    background-image: url("../images/clipboard.png");
+  }
+
+  .clock-icon {
+    background-image: url("../images/clock.png");
+  }
+
+  .expense-icon {
+    background-image: url("../images/expense.png");
   }
 }
