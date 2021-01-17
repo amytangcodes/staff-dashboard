@@ -3,9 +3,12 @@ import React from "react";
 const IsLoading = (Component) => {
   return function ListLoadingComponent({ isLoading, ...props }) {
     if (!isLoading) return <Component {...props} />;
-    return <p>Hold on, fetching your people!</p>;
+    return (
+      <div className="loading-page">
+        <div className="lds-dual-ring"></div>
+      </div>
+    );
   };
 };
 
 export default IsLoading;
-

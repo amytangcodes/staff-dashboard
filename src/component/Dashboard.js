@@ -1,7 +1,12 @@
 import React from "react";
 import PeopleColumn from "./PeopleColumn";
+import IsLoading from "./IsLoading";
 
-const Dashboard = ({ staff }) => {
+const Dashboard = (props) => {
+  const { isLoading, staff } = props;
+
+  const StaffLoading = IsLoading(PeopleColumn);
+
   return (
     <div id="dashboard" className="">
       <section>
@@ -11,8 +16,10 @@ const Dashboard = ({ staff }) => {
         </p>
       </section>
       <section className="section-content">
-        <PeopleColumn staffData={staff} />
-        <div className="column_invite-people"></div>
+        <StaffLoading staffData={staff} isLoading={isLoading} />
+        <div className="column_invite-people">
+          <h2>Content on the right side</h2>
+        </div>
       </section>
     </div>
   );

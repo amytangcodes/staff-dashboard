@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "semantic-ui-react";
 
-import IsLoading from "./component/IsLoading";
 import Navbar from "./component/Navbar";
 import Dashboard from "./component/Dashboard";
 import Aboutpage from "./component/Aboutpage";
 import "./styles/App.scss";
 
 const App = () => {
-  const StaffLoading = IsLoading(Dashboard);
   const [appState, setAppState] = useState({
     loading: false,
     staff: null,
@@ -42,7 +40,7 @@ const App = () => {
               path="/"
               exact
               render={() => (
-                <StaffLoading
+                <Dashboard
                   isLoading={appState.loading}
                   staff={appState.staff}
                 />
