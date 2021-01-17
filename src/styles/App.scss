@@ -96,7 +96,7 @@ button {
 
 .page-container {
   height: 100%;
-  padding-top: 48px;
+  padding-top: 112px;
 }
 
 .loading-page {
@@ -111,16 +111,18 @@ button {
   }
 }
 
-.section-heading {
-  margin-bottom: 8px;
-}
+.section-header {
+  .header {
+    margin-bottom: 8px;
+  }
 
-.section-heading_subhead {
-  color: $color_gray-bold;
-  font-size: $size_regular;
-  font-weight: $weight;
-  line-height: 24px;
-  letter-spacing: 0em;
+  .subhead {
+    color: $color_gray-bold;
+    font-size: $size_regular;
+    font-weight: $weight;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
 }
 
 // ANCHOR/ LINK STYLES
@@ -195,30 +197,43 @@ button {
 
 // NAVBAR STYLES
 // -----------------------------------------
-#navbar {
-  height: 64px;
-  display: flex;
+.navbar {
+  background: $bg;
+  min-height: 64px;
+}
+
+.home-logo {
+  color: black;
+  font-family: $font-family;
+  font-size: $size_large;
+  font-weight: $weight_bold;
+  line-height: $size_xxxlarge;
+  letter-spacing: 0em;
+}
+
+.navbar_toggler {
   justify-content: flex-end;
+}
 
-  .home-logo {
-    color: black;
-    font-family: $font-family;
-    font-size: $size_large;
-    font-weight: $weight_bold;
-    line-height: $size_xxxlarge;
-    letter-spacing: 0em;
-  }
+.nav-item {
+  // font-size: $size_regular;
+  // font-weight: $weight_semi-bold;
+  // line-height: $size_xlarge;
+  // border-radius: 12px;
+  padding: 8px 16px;
+  // margin: 0;
+}
 
-  a.item {
-    font-size: $size_regular;
-    font-weight: $weight_semi-bold;
-    line-height: $size_xlarge;
-    &.active {
-      background: none;
-    }
-    &:hover {
-      background: none;
-    }
+.nav-link {
+  font-size: $size_regular;
+  font-weight: $weight_semi-bold;
+  line-height: $size_xlarge;
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin: 0;
+  &.active {
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -256,11 +271,12 @@ button {
   }
 
   .card_header {
+    display: flex;
+    align-items: center;
     padding: 16px 0;
     position: relative;
 
     .avatar {
-      float: left;
       margin-right: 24px;
       width: 64px;
       border-radius: 500rem;
@@ -268,17 +284,13 @@ button {
       border: 1.5px solid $white;
       box-shadow: 0px 3px 16px rgba($black, 0.12);
     }
-    .card_container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 63px;
-    }
+
     .header {
       font-size: $size_medium;
       font-weight: $weight_bold;
       line-height: 20px;
     }
+
     .description {
       color: $color_gray-light;
       font-size: $size_xxsmall;
@@ -312,6 +324,7 @@ button {
       text-align: center;
       background: $bg2;
       padding: 24px;
+      border: none;
       border-radius: 12px;
 
       button {
@@ -353,8 +366,21 @@ button {
 // -----------------------------------------
 
 //XSmall
-@media screen and ($xsmall) {
-  body {
-    background: violet;
+@media screen and ($media_xsmall) {
+  #navbar {
+    display: none;
+  }
+  #mobileNavbar {
+    display: block;
+  }
+  #dashboard {
+    .section-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .staff-card {
+      margin-right: 0;
+    }
   }
 }
