@@ -28,7 +28,9 @@ const StaffCard = (props) => {
             Employee • Human Manufacturing Planner
           </Card.Description>
         </div>
-        <span className="icon right-arrow-icon"></span>
+        <a href="/" className="link_arrow">
+          <span className="icon icon_chevron-right"></span>
+        </a>
       </Card.Content>
       <div className="card_stat">{cardStatItems}</div>
       <div className="card_status">{cardStatusItems}</div>

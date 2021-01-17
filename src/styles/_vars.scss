@@ -10,7 +10,10 @@ $weight_black: 800;
 // COLOR
 $black: #000;
 $white: #fff;
-$bg: #F2F6FB;
+$bg: #f2f6fb;
+$bg2: #fff7ee;
+
+$button: #033fff;
 
 $color_gray: #444;
 $color_gray-bold: #555555;
@@ -37,3 +40,12 @@ $size_xxxxlarge: 22px;
 $size_element-height: 2.75em;
 $size_element-margin: 2em;
 $size_element-margin_small: 1em;
+
+// @mixin skel-breakpoints($x: ()) {
+//   $breakpoints: $x !global;
+// }
+$xlarge: "(max-width: 1800px)";
+$large: "(max-width: 1280px)";
+$medium: "(max-width: 980px)";
+$small: "(max-width: 736px)";
+$xsmall: "(max-width: 480px)";

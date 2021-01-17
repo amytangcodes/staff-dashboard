@@ -1,25 +1,25 @@
 export const stats = [
   {
-    icon: "clock-icon",
+    icon: "icon_clock",
     status: "Pending: $7.00",
   },
   {
-    icon: "clipboard-icon",
+    icon: "icon_clipboard",
     status: "Approved: $62.12",
   },
   {
-    icon: "expense-icon",
+    icon: "icon_expense",
     status: "Paid: $0.00",
   },
 ];
 
 export const status = [
   {
-    icon: "status-icon",
+    icon: "icon_status",
     status: "Account created",
   },
   {
-    icon: "status-icon",
+    icon: "icon_status",
     status: "Onboarded",
   },
 ];
