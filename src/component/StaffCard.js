@@ -1,8 +1,17 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
+import { stats, status } from "../api/api";
+import StatLabel from "./StatLabel";
 
 const StaffCard = (props) => {
   const { staff } = props;
+
+  const cardStatItems = stats.map((statItem, i) => (
+    <StatLabel data={statItem} />
+  ));
+  const cardStatusItems = status.map((statusItem, i) => (
+    <StatLabel data={statusItem} />
+  ));
 
   return (
     <div className="staff-card">
@@ -19,27 +28,8 @@ const StaffCard = (props) => {
           </Card.Description>
         </div>
       </Card.Content>
-      <div className="card_stat">
-        <p className="stat">
-          <span className="icon clock-icon"></span>Pending: $7.00
-        </p>
-        <p className="stat">
-          <span className="icon clipboard-icon"></span>Approved: $62.12
-        </p>
-        <p className="stat">
-          <span className="icon expense-icon"></span>Paid: $0.00
-        </p>
-      </div>
-      <div className="card_status">
-        <p className="status">
-          <span className="icon status-icon"></span>
-          Account created
-        </p>
-        <p className="status">
-          <span className="icon status-icon"></span>
-          Onboarded
-        </p>
-      </div>
+      <div className="card_stat">{cardStatItems}</div>
+      <div className="card_status">{cardStatusItems}</div>
     </div>
   );
 };
