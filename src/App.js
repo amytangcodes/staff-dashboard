@@ -4,7 +4,7 @@ import { Container } from "semantic-ui-react";
 
 import Navbar from "./component/Navbar";
 import Dashboard from "./component/Dashboard";
-import Aboutpage from "./component/Aboutpage";
+import Settingspage from "./component/Settingspage";
 import "./styles/App.scss";
 
 const App = () => {
@@ -46,7 +46,7 @@ const App = () => {
                 />
               )}
             />
-            <Route path="/about" exact render={() => <Aboutpage />} />
+            <Route path="/settings" exact render={() => <Settingspage />} />
           </div>
         </Router>
       </Container>

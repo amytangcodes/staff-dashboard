@@ -178,6 +178,8 @@ a {
 
   .card_header {
     padding: 16px 0;
+    position: relative;
+
     .avatar {
       float: left;
       margin-right: 24px;
@@ -249,5 +251,16 @@ a {
 
   .expense-icon {
     background-image: url("../images/expense.png");
+  }
+
+  .right-arrow-icon {
+    position: absolute;
+    right: 15px;
+    top: 45px;
+    transform: translateY(-50%);
+    background-image: url("../images/chevron-right.png");
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 20px;
   }
 }

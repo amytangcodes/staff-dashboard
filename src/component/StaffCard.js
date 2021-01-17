@@ -7,10 +7,11 @@ const StaffCard = (props) => {
   const { staff } = props;
 
   const cardStatItems = stats.map((statItem, i) => (
-    <StatLabel data={statItem} />
+    <StatLabel data={statItem} key={i} />
   ));
+
   const cardStatusItems = status.map((statusItem, i) => (
-    <StatLabel data={statusItem} />
+    <StatLabel data={statusItem} key={i} />
   ));
 
   return (
@@ -27,6 +28,7 @@ const StaffCard = (props) => {
             Employee • Human Manufacturing Planner
           </Card.Description>
         </div>
+        <span className="icon right-arrow-icon"></span>
       </Card.Content>
       <div className="card_stat">{cardStatItems}</div>
       <div className="card_status">{cardStatusItems}</div>
