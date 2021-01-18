@@ -13,7 +13,7 @@ const PeopleColumn = (props) => {
 
   return (
     <div className="column_people">
-      {staffData[0].collection.map((staff) => (
+      {staffData.collection.map((staff) => (
         <StaffCard staff={staff} key={staff.id} />
       ))}
     </div>
