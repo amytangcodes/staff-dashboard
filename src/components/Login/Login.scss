@@ -1,0 +1,47 @@
+@import "../../styles/vars";
+
+.login-page {
+  height: 100%;
+  position: relative;
+
+  input,
+  button {
+    display: block;
+    font-size: $size_regular;
+    min-height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+  }
+
+  input {
+    background: $color_gray-lightest;
+    color: $color_gray-bold;
+    margin: 24px 0;
+    padding: 0 16px;
+  }
+
+  button {
+    background: $color_gray-lighter;
+    color: $white;
+    font-weight: $weight_bold;
+  }
+}
+
+.login-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  box-shadow: 0px 4px 24px rgba($black, 0.08);
+  border-radius: 12px;
+  max-width: 502px;
+  padding: 24px;
+}
+
+@media screen and ($media_xsmall) {
+  .login-container {
+    width: 100%;
+  }
+}

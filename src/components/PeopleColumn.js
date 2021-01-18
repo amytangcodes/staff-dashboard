@@ -3,6 +3,7 @@ import StaffCard from "./StaffCard";
 
 const PeopleColumn = (props) => {
   const { staffData } = props;
+  console.log(staffData);
 
   if (!staffData || staffData.length === 0)
     return (
@@ -13,7 +14,7 @@ const PeopleColumn = (props) => {
 
   return (
     <div className="column_people">
-      {staffData.collection.map((staff) => (
+      {staffData[0].collection.map((staff) => (
         <StaffCard staff={staff} key={staff.id} />
       ))}
     </div>

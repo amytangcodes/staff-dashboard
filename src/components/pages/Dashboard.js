@@ -1,12 +1,12 @@
 import React from "react";
 import PeopleColumn from "../PeopleColumn";
 import InvitePeopleColumn from "../InvitePeopleColumn";
-import IsLoading from "../IsLoading";
+// import IsLoading from "../IsLoading";
 
 const Dashboard = (props) => {
-  const { isLoading, staff } = props;
+  const { staff } = props;
 
-  const StaffLoading = IsLoading(PeopleColumn);
+  // const StaffLoading = IsLoading(PeopleColumn);
 
   return (
     <div id="dashboard">
@@ -17,7 +17,8 @@ const Dashboard = (props) => {
         </p>
       </section>
       <section className="section-content">
-        <StaffLoading staffData={staff} isLoading={isLoading} />
+        {/* <StaffLoading staffData={staff} isLoading={isLoading} /> */}
+        <PeopleColumn staffData={staff} />
         <InvitePeopleColumn />
       </section>
     </div>
