@@ -3,28 +3,27 @@ import "./Login.scss";
 
 const Login = () => {
   return (
-    <section className="login-page">
+    <section className="logged-out-page">
       <div className="login-container">
         <div className="section-header">
-          <h1 className="header">Get Started with Wrapbook</h1>
+          <h1 className="header">Log Into Wrapbook</h1>
           <p className="subhead">
             Tackle timecards, payroll, and insurance with Wrapbook, a powerful
             and easy to use platform for managing productions.
           </p>
         </div>
-        <form>
-          <label>
-            <p>Username</p>
+        <form className="form login-form">
+          <div className="form-group">
+            <label>Email</label>
             <input type="text" />
-          </label>
-          <label>
-            <p>Password</p>
+          </div>
+          <div className="form-group">
+            <label>Password</label>
             <input type="password" />
-          </label>
+          </div>
           <div>
             <button type="submit">Submit</button>
           </div>
-          
         </form>
       </div>
     </section>

@@ -5,17 +5,25 @@
   min-height: 64px;
 }
 
-.home-logo {
+.navbar-brand {
   color: black;
   font-family: $font-family;
   font-size: $size_large;
   font-weight: $weight_bold;
   line-height: $size_xxxlarge;
   letter-spacing: 0em;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navbar-toggler {
+  border: none;
   color: $black;
+  font-size: $size_medium;
+
+  &:focus {
+    outline: none !important;
+  }
 }
 
 .navbar-menu {
@@ -23,10 +31,11 @@
 }
 
 .nav-item {
-  padding: 8px 16px;
+  padding: 8px;
 }
 
 .nav-link {
+  color: $black;
   font-size: $size_regular;
   font-weight: $weight_semi-bold;
   line-height: $size_xlarge;

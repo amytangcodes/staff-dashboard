@@ -1,8 +1,9 @@
 @import "../../styles/vars";
 
-.login-page {
+.logged-out-page {
   height: 100%;
   position: relative;
+  font-family: $font-family;
 
   input,
   button {
@@ -52,6 +53,13 @@
   border-radius: 12px;
   max-width: 502px;
   padding: 24px;
+}
+
+.login-form {
+  margin-top: 16px;
+  input {
+    margin-top: 0;
+  }
 }
 
 @media screen and ($media_xsmall) {

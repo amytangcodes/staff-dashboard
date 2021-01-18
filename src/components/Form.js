@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import Signup from "./Signup";
 import SignupSuccess from "./Signup/SignupSuccess";
 
@@ -10,9 +10,7 @@ const Form = () => {
   }
 
   return (
-    <Fragment>
-      {!isSubmitted ? <Signup submitForm={submitForm} /> : <SignupSuccess />}
-    </Fragment>
+    <>{!isSubmitted ? <Signup submitForm={submitForm} /> : <SignupSuccess />}</>
   );
 };
 

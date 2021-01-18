@@ -20,19 +20,13 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" as={NavLink} href="/login">
-              Login
+            <a className="nav-link" as={NavLink} href="/settings">
+              Settings
             </a>
           </li>
           <li className="nav-item">
-            <a
-              className="nav-link"
-              as={NavLink}
-              exact
-              aria-current="page"
-              href="/signup"
-            >
-              Signup
+            <a className="nav-link" as={NavLink} href="/login">
+              Logout
             </a>
           </li>
         </ul>

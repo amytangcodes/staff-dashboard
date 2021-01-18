@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import DynamicLayoutRoute from "./components/pages/DynamicLayoutRoute.js";
 import Dashboard from "./components/pages/Dashboard";
 import SettingsPage from "./components/pages/SettingsPage";
-import Navbar from "./components/Navbar";
+import LoggedOutPage from "./components/pages/LoggedOutPage";
 import Login from "./components/Login";
-import SignupPage from "./components/pages/SignupPage";
+
 import "./styles/App.scss";
 
 const fakeData = [
@@ -80,24 +81,48 @@ const App = () => {
     <div className="App">
       <div className="container">
         <BrowserRouter>
-          <Navbar />
-          <div className="page-container">
-            <Switch>
-              <Route path="/" exact render={() => <Login />} />
-              <Route path="/signup" exact render={() => <SignupPage />} />
-              <Route
-                path="/dashboard"
-                exact
-                render={() => (
-                  <Dashboard
-                    // isLoading={appState.loading}
-                    staff={fakeData}
-                  />
-                )}
-              />
-              <Route path="/settings" exact render={() => <SettingsPage />} />
-            </Switch>
-          </div>
+          <Switch>
+            <DynamicLayoutRoute
+              path="/"
+              exact
+              render={() => (
+                <Dashboard
+                  // isLoading={appState.loading}
+                  staff={fakeData}
+                />
+              )}
+              layout="DASH_BOARD_NAV"
+            />
+            <DynamicLayoutRoute
+              path="/signup"
+              exact
+              render={() => <LoggedOutPage />}
+              layout="NAV"
+            />
+
+            <DynamicLayoutRoute
+              path="/dashboard"
+              exact
+              render={() => (
+                <Dashboard
+                  // isLoading={appState.loading}
+                  staff={fakeData}
+                />
+              )}
+              layout="DASH_BOARD_NAV"
+            />
+            <DynamicLayoutRoute
+              path="/settings"
+              exact
+              render={() => <SettingsPage />}
+            />
+            <DynamicLayoutRoute
+              path="/login"
+              exact
+              render={() => <Login />}
+              layout="NAV"
+            />
+          </Switch>
         </BrowserRouter>
       </div>
     </div>
