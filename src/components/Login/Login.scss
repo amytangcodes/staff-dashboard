@@ -17,14 +17,28 @@
   input {
     background: $color_gray-lightest;
     color: $color_gray-bold;
-    margin: 24px 0;
+    margin-top: 20px;
+    margin-bottom: 4px;
     padding: 0 16px;
+    &:focus {
+      outline: none !important;
+      color: $black;
+      background: $white;
+      border: 1.5px solid $input-border_active;
+      border-radius: 12px;
+    }
   }
 
   button {
     background: $color_gray-lighter;
     color: $white;
     font-weight: $weight_bold;
+    margin-top: 20px;
+  }
+
+  .error-message {
+    color: $error;
+    font-weight: $weight_semi-bold;
   }
 }
 

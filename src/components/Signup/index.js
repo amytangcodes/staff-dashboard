@@ -1,8 +1,9 @@
 import React from "react";
 import useForm from "./useForm";
+import validate from "./ValidatesInfo";
 
 const Index = () => {
-  const { handleChange, values, handleSubmit } = useForm();
+  const { handleChange, values, handleSubmit, errors } = useForm(validate);
 
   return (
     <section className="login-page">
@@ -22,6 +23,7 @@ const Index = () => {
             value={values.email}
             onChange={handleChange}
           />
+          {errors.email && <p className="error-message">{errors.email}</p>}
           <input
             type="password"
             name="password"
@@ -29,6 +31,9 @@ const Index = () => {
             value={values.password}
             onChange={handleChange}
           />
+          {errors.password && (
+            <p className="error-message">{errors.password}</p>
+          )}
           <input
             type="password"
             name="password2"
@@ -36,7 +41,9 @@ const Index = () => {
             value={values.password2}
             onChange={handleChange}
           />
-
+          {errors.password2 && (
+            <p className="error-message">{errors.password2}</p>
+          )}
           <div>
             <button type="submit">Continue to Wrapbook</button>
           </div>
