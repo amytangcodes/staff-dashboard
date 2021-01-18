@@ -3,7 +3,6 @@ import StaffCard from "./StaffCard";
 
 const PeopleColumn = (props) => {
   const { staffData } = props;
-  console.log(staffData);
 
   if (!staffData || staffData.length === 0)
     return (

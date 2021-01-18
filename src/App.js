@@ -6,7 +6,7 @@ import Dashboard from "./components/pages/Dashboard";
 import SettingsPage from "./components/pages/SettingsPage";
 import Navbar from "./components/Navbar";
 import Login from "./components/Login";
-import Signup from "./components/Signup";
+import SignupPage from "./components/pages/SignupPage";
 import "./styles/App.scss";
 
 const fakeData = [
@@ -84,7 +84,7 @@ const App = () => {
           <div className="page-container">
             <Switch>
               <Route path="/" exact render={() => <Login />} />
-              <Route path="/signup" exact render={() => <Signup />} />
+              <Route path="/signup" exact render={() => <SignupPage />} />
               <Route
                 path="/dashboard"
                 exact

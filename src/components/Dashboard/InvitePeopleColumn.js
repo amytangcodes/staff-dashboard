@@ -1,5 +1,5 @@
 import React from "react";
-import InviteImage from "../images/invite.png";
+import InviteImage from "../../images/invite.png";
 
 const InvitePeopleColumn = () => {
   return (
