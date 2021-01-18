@@ -4,7 +4,7 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav className="navbar fixed-top navbar-expand-lg">
       <div className="container">
         <a className="navbar-brand home-logo" href="/">
           Wrapbook
