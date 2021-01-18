@@ -1,0 +1,59 @@
+@import "../../styles/vars";
+
+.navbar {
+  background: $bg;
+  min-height: 64px;
+}
+
+.navbar-brand {
+  color: black;
+  font-family: $font-family;
+  font-size: $size_large;
+  font-weight: $weight_bold;
+  line-height: $size_xxxlarge;
+  letter-spacing: 0em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-toggler {
+  border: none;
+  color: $black;
+  font-size: $size_medium;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.navbar-menu {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 8px;
+}
+
+.nav-link {
+  color: $black;
+  font-size: $size_regular;
+  font-weight: $weight_semi-bold;
+  line-height: $size_xlarge;
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin: 0;
+  &.active {
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+// MEDIA BREAKPOINTS | XSmall
+@media screen and ($media_xsmall) {
+  #navbar {
+    display: none;
+  }
+  #mobileNavbar {
+    display: block;
+  }
+}

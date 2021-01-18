@@ -1,0 +1,69 @@
+@import "../../styles/vars";
+
+.logged-out-page {
+  height: 100%;
+  position: relative;
+  font-family: $font-family;
+
+  input,
+  button {
+    display: block;
+    font-size: $size_regular;
+    min-height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+  }
+
+  input {
+    background: $color_gray-lightest;
+    color: $color_gray-bold;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding: 0 16px;
+    &:focus {
+      outline: none !important;
+      color: $black;
+      background: $white;
+      border: 1.5px solid $input-border_active;
+      border-radius: 12px;
+    }
+  }
+
+  button {
+    background: $color_gray-lighter;
+    color: $white;
+    font-weight: $weight_bold;
+    margin-top: 20px;
+  }
+
+  .error-message {
+    color: $error;
+    font-weight: $weight_semi-bold;
+  }
+}
+
+.login-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  box-shadow: 0px 4px 24px rgba($black, 0.08);
+  border-radius: 12px;
+  max-width: 502px;
+  padding: 24px;
+}
+
+.login-form {
+  margin-top: 16px;
+  input {
+    margin-top: 0;
+  }
+}
+
+@media screen and ($media_xsmall) {
+  .login-container {
+    width: 100%;
+  }
+}

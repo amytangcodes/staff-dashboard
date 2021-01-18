@@ -4,8 +4,12 @@
 
 // BASE STYLES
 // -----------------------------------------
-body {
+body,
+html {
   background: $bg;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 body,
@@ -56,12 +60,19 @@ h5 {
 }
 
 a {
-  transition: all ease-in-out 0.3;
+  transition: all ease-in-out 0.3s;
 }
 
 button {
   cursor: pointer;
   color: $button;
+}
+
+#root,
+.App,
+.container,
+.page-container {
+  height: 100%;
 }
 
 .flex {
@@ -114,6 +125,8 @@ button {
 .section-header {
   .header {
     margin-bottom: 8px;
+    font-weight: $weight_bold;
+    line-height: 26.25px;
   }
 
   .subhead {
@@ -193,48 +206,6 @@ button {
 
 .icon_chevron-right {
   background-image: url("../images/chevron-right.png");
-}
-
-// NAVBAR STYLES
-// -----------------------------------------
-.navbar {
-  background: $bg;
-  min-height: 64px;
-}
-
-.home-logo {
-  color: black;
-  font-family: $font-family;
-  font-size: $size_large;
-  font-weight: $weight_bold;
-  line-height: $size_xxxlarge;
-  letter-spacing: 0em;
-}
-
-.navbar_toggler {
-  justify-content: flex-end;
-}
-
-.nav-item {
-  // font-size: $size_regular;
-  // font-weight: $weight_semi-bold;
-  // line-height: $size_xlarge;
-  // border-radius: 12px;
-  padding: 8px 16px;
-  // margin: 0;
-}
-
-.nav-link {
-  font-size: $size_regular;
-  font-weight: $weight_semi-bold;
-  line-height: $size_xlarge;
-  border-radius: 12px;
-  padding: 8px 16px;
-  margin: 0;
-  &.active {
-    background: #ffffff;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
-  }
 }
 
 // DASHBOARD STYLES
@@ -366,13 +337,7 @@ button {
 // -----------------------------------------
 
 //XSmall
-@media screen and ($media_xsmall) {
-  #navbar {
-    display: none;
-  }
-  #mobileNavbar {
-    display: block;
-  }
+@media screen and ($media_small) {
   #dashboard {
     .section-content {
       flex-direction: column;

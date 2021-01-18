@@ -1,5 +1,5 @@
 import React from "react";
-import { stats, status } from "../api/api";
+import { stats, status } from "../../api/api";
 import StatLabel from "./StatLabel";
 
 const StaffCard = (props) => {
