@@ -39,20 +39,15 @@ const App = () => {
         <BrowserRouter>
           <Switch>
             <DynamicLayoutRoute
-              path="/"
-              exact
-              render={() => (
-                <Dashboard
-                  isLoading={appState.loading}
-                  staff={appState.staff}
-                />
-              )}
-              layout="DASH_BOARD_NAV"
-            />
-            <DynamicLayoutRoute
               path="/signup"
               exact
               render={() => <LoggedOutPage />}
+              layout="NAV"
+            />
+            <DynamicLayoutRoute
+              path="/login"
+              exact
+              render={() => <Login />}
               layout="NAV"
             />
 
@@ -68,15 +63,21 @@ const App = () => {
               layout="DASH_BOARD_NAV"
             />
             <DynamicLayoutRoute
+              path="/"
+              exact
+              render={() => (
+                <Dashboard
+                  isLoading={appState.loading}
+                  staff={appState.staff}
+                />
+              )}
+              layout="DASH_BOARD_NAV"
+            />
+            <DynamicLayoutRoute
               path="/settings"
               exact
               render={() => <SettingsPage />}
-            />
-            <DynamicLayoutRoute
-              path="/login"
-              exact
-              render={() => <Login />}
-              layout="NAV"
+              layout="DASH_BOARD_NAV"
             />
           </Switch>
         </BrowserRouter>
