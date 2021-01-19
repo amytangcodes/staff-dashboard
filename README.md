@@ -1,9 +1,18 @@
 # Company Staff Dashboard Project
 
+## Overview
+
+Tasked to build a responsive sign up and dashboard view based on mockups provided.
+Dashboard is fetching list of people from an API endpoint.
+
+Check out the demo [here](https://staffbook.netlify.app/)
+
+![Alt text](/screenshot_signup.png?raw=true "Signup")
+![Alt text](/screenshot_dashboard.png?raw=true "Dashboard")
+
 ## Built With
 
 - [Create-React-App](https://github.com/facebook/create-react-app)
-- [Semantic-UI](https://semantic-ui.com/)
 
 ## Getting Started
 
