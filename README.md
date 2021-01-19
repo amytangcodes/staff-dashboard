@@ -1,11 +1,11 @@
-# Company Staff Dashboard Project
+# Staff Dashboard Project
 
 ## Overview
 
-Tasked to build a responsive sign up and dashboard view based on mockups provided.
-Dashboard is fetching list of people from an API endpoint.
+Tasked to build the front-end for a signup and dashboard page based on mockups provided.
+Dashboard is fetching a list of people from an API endpoint.
 
-Check out the demo [here](https://staffbook.netlify.app/)
+Check out the demo [here](https://staffbook.netlify.app/signup)
 
 ![Alt text](/screenshot_signup.png?raw=true "Signup")
 ![Alt text](/screenshot_dashboard.png?raw=true "Dashboard")
@@ -55,5 +55,5 @@ Your app is ready to be deployed!
 
 ## Contact
 
-- Site [amytangcodes.com](https://www.amytangcodes.com/)
-- GitHub [@amytangcodes](https://{github.com/amytangcodes})
+- [amytangcodes.com](https://www.amytangcodes.com/)
+- [github](https://{github.com/amytangcodes})
