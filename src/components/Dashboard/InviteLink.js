@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const InviteLink = () => {
-  const copyText = "https://staffbook.com/i/j93kda92";
+  const copyText = "https://wrapbook.com/i/j93kda92";
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = (copyText) => {

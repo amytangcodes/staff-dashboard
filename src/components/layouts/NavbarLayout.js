@@ -5,7 +5,7 @@ const NavbarLayout = ({ children }) => {
     <nav className="navbar fixed-top navbar-expand-lg">
       <div className="container">
         <a className="navbar-brand home-logo" href="/">
-          Staffbook
+          Wrapbook
         </a>
         <button
           className="navbar-toggler"

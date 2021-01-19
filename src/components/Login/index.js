@@ -6,9 +6,9 @@ const Login = () => {
     <section className="logged-out-page">
       <div className="login-container">
         <div className="section-header">
-          <h1 className="header">Log Into Staffbook</h1>
+          <h1 className="header">Log Into Wrapbook</h1>
           <p className="subhead">
-            Tackle timecards, payroll, and insurance with Staffbook, a powerful
+            Tackle timecards, payroll, and insurance with Wrapbook, a powerful
             and easy to use platform for managing productions.
           </p>
         </div>
