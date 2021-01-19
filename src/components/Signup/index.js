@@ -15,8 +15,8 @@ const Index = ({ submitForm }) => {
   return (
     <>
       <SectionHeader
-        header="Get Started with Wrapbook"
-        description="Tackle timecards, payroll, and insurance with Wrapbook, a powerful and
+        header="Get Started with Staffbook"
+        description="Tackle timecards, payroll, and insurance with Staffbook, a powerful and
           easy to use platform for managing productions."
       />
 
@@ -53,7 +53,7 @@ const Index = ({ submitForm }) => {
             disabled={submitDisabled}
             className="form-button"
           >
-            Continue to Wrapbook
+            Continue to Staffbook
           </button>
         </div>
       </form>
