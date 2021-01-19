@@ -28,7 +28,6 @@ const Navbar = () => {
             <a
               className="nav-link"
               as={NavLink}
-              exact
               aria-current="page"
               href="/signup"
             >
