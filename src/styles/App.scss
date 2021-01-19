@@ -69,6 +69,7 @@ a {
 button {
   cursor: pointer;
   color: $button;
+  transition: all ease-in-out 0.3s;
 }
 
 #root,
@@ -155,6 +156,10 @@ button {
 
 .btn_copy-clipboard {
   background: $white;
+  &:hover {
+    background: $link;
+    color: $white;
+  }
 }
 
 .link_arrow {
@@ -167,7 +172,8 @@ button {
 }
 
 .link_invite {
-  border: none;
+  color: $button;
+  display: block;
   font-size: $size_small;
   line-height: $size_large;
   letter-spacing: -0.003em;
@@ -177,6 +183,15 @@ button {
   margin: 24px auto;
   background: $white;
   border-radius: 12px;
+  cursor: pointer;
+}
+
+.copied {
+  color: $alert;
+  font-family: $font-family;
+  font-size: $size_xsmall;
+  font-weight: $weight_bold;
+  margin-top: 24px;
 }
 
 // ICON STYLES

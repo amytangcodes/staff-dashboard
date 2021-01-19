@@ -1,5 +1,6 @@
 import React from "react";
 import InviteImage from "../../images/invite.png";
+import InviteLink from "./InviteLink";
 
 const InvitePeopleColumn = () => {
   return (
@@ -18,12 +19,7 @@ const InvitePeopleColumn = () => {
             Share the following link with your team to have them sign up and
             send you their invoices.
           </p>
-          <button className="link_invite">
-            https://wrapbook.com/i/j93kda92
-          </button>
-          <button className="button btn_copy-clipboard">
-            Copy to clipboard
-          </button>
+          <InviteLink />
         </div>
       </div>
       <div className="footer mobile">
