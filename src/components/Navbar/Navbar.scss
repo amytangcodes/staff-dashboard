@@ -55,15 +55,15 @@
     display: block;
     box-shadow: 0 0 10px -2px rgba($black, 0.2);
   }
-  .navbar-nav {
-    .nav-link {
-      padding-left: 20px;
-    }
-  }
 }
 
 @media screen and ($media_medium) {
   .navbar {
     box-shadow: 0 0 10px -2px rgba($black, 0.2);
+  }
+  .navbar-nav {
+    .nav-link {
+      padding-left: 20px;
+    }
   }
 }
