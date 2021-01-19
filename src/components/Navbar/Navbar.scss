@@ -55,8 +55,10 @@
     display: block;
     box-shadow: 0 0 10px -2px rgba($black, 0.2);
   }
-  .nav-link {
-    padding-left: 20px;
+  .navbar-nav {
+    .nav-link {
+      padding-left: 20px;
+    }
   }
 }
 
