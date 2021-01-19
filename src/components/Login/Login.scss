@@ -30,11 +30,14 @@
     }
   }
 
-  button {
-    background: $color_gray-lighter;
+  .form-button {
+    background: $link;
     color: $white;
     font-weight: $weight_bold;
     margin-top: 20px;
+    &:disabled {
+      background: $color_gray-lighter;
+    }
   }
 
   .error-message {

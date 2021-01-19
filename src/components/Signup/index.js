@@ -1,22 +1,25 @@
 import React from "react";
 import useForm from "./useForm";
 import validate from "./ValidatesInfo";
+import SectionHeader from "../SectionHeader";
 
 const Index = ({ submitForm }) => {
-  const { handleChange, values, handleSubmit, errors } = useForm(
-    submitForm,
-    validate
-  );
+  const {
+    handleChange,
+    values,
+    handleSubmit,
+    errors,
+    submitDisabled,
+  } = useForm(submitForm, validate);
 
   return (
     <>
-      <div className="section-header">
-        <h1 className="header">Get Started with Wrapbook</h1>
-        <p className="subhead">
-          Tackle timecards, payroll, and insurance with Wrapbook, a powerful and
-          easy to use platform for managing productions.
-        </p>
-      </div>
+      <SectionHeader
+        header="Get Started with Wrapbook"
+        description="Tackle timecards, payroll, and insurance with Wrapbook, a powerful and
+          easy to use platform for managing productions."
+      />
+
       <form className="form" onSubmit={handleSubmit}>
         <input
           type="email"
@@ -45,7 +48,13 @@ const Index = ({ submitForm }) => {
           <p className="error-message">{errors.password2}</p>
         )}
         <div>
-          <button type="submit">Continue to Wrapbook</button>
+          <button
+            type="submit"
+            disabled={submitDisabled}
+            className="form-button"
+          >
+            Continue to Wrapbook
+          </button>
         </div>
       </form>
     </>
