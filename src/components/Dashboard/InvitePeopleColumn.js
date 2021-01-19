@@ -4,7 +4,7 @@ import InviteImage from "../../images/invite.png";
 const InvitePeopleColumn = () => {
   return (
     <div className="column_invite-people">
-      <div className="card">
+      <div className="card desktop">
         <div className="image-container">
           <img
             src={InviteImage}
@@ -25,6 +25,11 @@ const InvitePeopleColumn = () => {
             Copy to clipboard
           </button>
         </div>
+      </div>
+      <div className="footer mobile">
+        <a href="/" className="invite-link">
+          Invite someone to Wrapbook
+        </a>
       </div>
     </div>
   );
