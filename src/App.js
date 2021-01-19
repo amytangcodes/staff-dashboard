@@ -38,6 +38,7 @@ const App = () => {
       <div className="container">
         <BrowserRouter>
           <Switch>
+            {/* Logged Out Nav */}
             <DynamicLayoutRoute
               path="/signup"
               exact
@@ -51,6 +52,7 @@ const App = () => {
               layout="NAV"
             />
 
+            {/* Logged In Nav */}
             <DynamicLayoutRoute
               path="/dashboard"
               exact

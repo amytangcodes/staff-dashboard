@@ -10,24 +10,24 @@ const Navbar = () => {
       <div className="collapse navbar-collapse navbar-menu" id="navbarToggler">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link" as={NavLink} href="/">
-              Link
-            </a>
+            <NavLink className="nav-link" exact href="/" to="/">
+              Home
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" as={NavLink} href="/">
+            <NavLink className="nav-link" href="/" to="/link">
               Link
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" as={NavLink} href="/settings">
+            <NavLink className="nav-link" href="/settings" to="/settings">
               Settings
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" as={NavLink} href="/login">
+            <NavLink className="nav-link" href="/login" to="/login">
               Logout
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
