@@ -3,7 +3,6 @@
 .navbar {
   background: $bg;
   min-height: 64px;
-  box-shadow: 0 0 10px -2px rgba($black, 0.2);
 }
 
 .navbar-brand {
@@ -49,12 +48,17 @@
   }
 }
 
-// MEDIA BREAKPOINTS | XSmall
+// MEDIA BREAKPOINTS
+
 @media screen and ($media_xsmall) {
-  #navbar {
-    display: none;
-  }
   #mobileNavbar {
     display: block;
+    box-shadow: 0 0 10px -2px rgba($black, 0.2);
+  }
+}
+
+@media screen and ($media_medium) {
+  .navbar {
+    box-shadow: 0 0 10px -2px rgba($black, 0.2);
   }
 }
