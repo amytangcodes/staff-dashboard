@@ -4,6 +4,7 @@ import SectionHeader from "../SectionHeader";
 
 const Login = () => {
   return (
+    <div className="page-container">
     <section className="logged-out-page">
       <div className="login-container">
         <SectionHeader
@@ -33,6 +34,7 @@ const Login = () => {
         </form>
       </div>
     </section>
+    </div>
   );
 };
 
