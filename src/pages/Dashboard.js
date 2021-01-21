@@ -1,8 +1,8 @@
 import React from "react";
-import SectionHeader from "../SectionHeader";
-import PeopleColumn from "../Dashboard/PeopleColumn";
-import InvitePeopleColumn from "../Dashboard/InvitePeopleColumn";
-import IsLoading from "../IsLoading";
+import SectionHeader from "../components/SectionHeader";
+import PeopleColumn from "../components/Dashboard/PeopleColumn";
+import InvitePeopleColumn from "../components/Dashboard/InvitePeopleColumn";
+import IsLoading from "../components/IsLoading";
 
 const Dashboard = (props) => {
   const { isLoading, staff } = props;

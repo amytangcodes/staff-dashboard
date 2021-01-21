@@ -1,5 +1,5 @@
 import React from "react";
-import LoggedInNav from "../Navbar/LoggedInNav.js";
+import LoggedInNav from "../components/Navbar/LoggedInNav.js";
 
 const LoggedInLayout = ({ children }) => {
   return (

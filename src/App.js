@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import DynamicLayoutRoute from "./components/pages/DynamicLayoutRoute.js";
-import Dashboard from "./components/pages/Dashboard";
-import SettingsPage from "./components/pages/SettingsPage";
-import LoggedOutPage from "./components/pages/LoggedOutPage";
+import DynamicLayoutRoute from "./pages/DynamicLayoutRoute.js";
+import Dashboard from "./pages/Dashboard";
+import SettingsPage from "./pages/SettingsPage";
+import LoggedOutPage from "./pages/LoggedOutPage";
 import Login from "./components/Login";
 
 import "./styles/App.scss";

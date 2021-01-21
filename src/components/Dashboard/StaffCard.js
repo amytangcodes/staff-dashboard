@@ -1,5 +1,6 @@
 import React from "react";
-import { stats, status } from "../../api/api";
+import { stats, status } from "api/api";
+import Avatar from "images/avatar.png";
 import StatLabel from "./StatLabel";
 
 const StaffCard = (props) => {
@@ -16,11 +17,7 @@ const StaffCard = (props) => {
   return (
     <div className="staff-card">
       <div className="card_header">
-        <img
-          src="https://react.semantic-ui.com/images/avatar/large/jenny.jpg"
-          alt={staff.name}
-          className="avatar"
-        />
+        <img src={Avatar} alt={staff.name} className="avatar" />
         <div className="card_container">
           <div className="header">{staff.name}</div>
           <div className="description">
