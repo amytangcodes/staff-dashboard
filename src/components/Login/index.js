@@ -8,8 +8,8 @@ const Login = () => {
       <section className="logged-out-page">
         <div className="login-container">
           <SectionHeader
-            header="Log Into Wrapbook"
-            description="Tackle timecards, payroll, and insurance with Wrapbook, a powerful and
+            header="Log Into Staffbook"
+            description="Tackle timecards, payroll, and insurance with Staffbook, a powerful and
           easy to use platform for managing productions."
           />
           <form className="form login-form">

@@ -24,7 +24,7 @@ const InvitePeopleColumn = () => {
       </div>
       <div className="footer mobile">
         <a href="/" className="invite-link">
-          Invite someone to Wrapbook
+          Invite someone to Staffbook
         </a>
       </div>
     </div>
