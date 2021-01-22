@@ -379,6 +379,9 @@ button {
 }
 
 @media screen and ($media_small) {
+  .card_stat {
+    display: none;
+  }
   #dashboard {
     .section-content {
       flex-direction: column;
