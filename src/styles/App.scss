@@ -379,9 +379,6 @@ button {
 }
 
 @media screen and ($media_small) {
-  .card_stat {
-    display: none;
-  }
   #dashboard {
     .section-content {
       flex-direction: column;
@@ -391,6 +388,10 @@ button {
     .staff-card {
       margin-right: 0;
     }
+  }
+
+  .card_stat {
+    display: none !important;
   }
 
   .column_people {
