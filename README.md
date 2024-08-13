@@ -55,6 +55,5 @@ Your app is ready to be deployed!
 
 ## Contact
 
-<p><a href="mailto:hello@amytangcodes.com">email</a></p>
-<p><a href="https://www.amytangcodes.com/">amytangcodes.com</a></p>
+<p><a href="mailto:amytangcodes@gmail.com">email</a></p>
 <p><a href="https://github.com/amytangcodes">github</a></p>
